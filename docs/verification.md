@@ -18,9 +18,10 @@ Verification date: 2026-10-16. Content snapshot: 2026-10-16. See `browser-suppor
 | Axe | All enabled axe rules, all routes with the application upgraded and with application modules suppressed |
 | Keyboard | Actual Tab traversal, arrow-key floor tabs, Enter activation, Escape restore, hall navigation, browser Back |
 | Native transitions | Shared panel/title snapshots, fixed chrome, camera types, cleared dynamic names |
+| Lean-in geometry | At 1440px: 914px → 1031px → 914px after Escape; focused heading clears sticky chrome |
 | Return slot | Correct Cover panel and correct Wildlife Halls floor; cached-page cleanup tested repeatedly |
 | Motion safety | Reduced motion / Still Panels have no running transform, clip, stroke, or boil animations |
-| Interactions | Exhibition filters, one-shot beats, Replay/Pause, max six live panels, unique traveler, concept form |
+| Interactions | Exhibition filters, one visible beat at a time, one-shot beats, Replay/Pause, max six live panels, unique traveler, concept form |
 | Respect boundaries | No Specimen, balloons, or SFX on Egyptian Mummies |
 | Engine fallbacks | Chromium, Firefox, WebKit navigation and axe smoke checks |
 

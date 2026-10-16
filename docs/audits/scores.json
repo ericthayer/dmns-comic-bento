@@ -5,7 +5,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "lcpMs": 2253.0563,
+    "lcpMs": 2254.0536999999995,
     "cls": 0.000427823674572855,
     "tbtMs": 0
   },
@@ -15,8 +15,8 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "lcpMs": 2252.7838999999994,
-    "cls": 0,
+    "lcpMs": 2253.1932999999995,
+    "cls": 0.0004150150284411698,
     "tbtMs": 0
   },
   {
@@ -25,7 +25,7 @@
     "accessibility": 100,
     "bestPractices": 100,
     "seo": 100,
-    "lcpMs": 2252.6724,
+    "lcpMs": 2252.8157000000006,
     "cls": 0.0005012499832114686,
     "tbtMs": 0
   }

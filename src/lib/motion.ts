@@ -32,5 +32,6 @@ export async function transition(update: () => void, types: string[], heading?: 
     running = undefined;
   }
   heading?.focus({preventScroll:true});
+  heading?.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});
   if (message) { const live = document.getElementById('announcer'); if (live) live.textContent = message; }
 }

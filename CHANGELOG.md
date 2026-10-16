@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.1 — 2026-10-16
+
+### Fixed
+- Look closer now overrides authored grid maps at desktop and tablet sizes, enlarges the art stage, and has a visible phone treatment.
+- Changed-region focus scrolls clear of the sticky museum header.
+- Inactive SVG beats are removed from painting so animated child visibility cannot make multiple creatures show at once.
+- Keyboard verification checks actual panel geometry, restored width, and unobscured focus.
+
 ## 0.1.0 — 2026-10-16
 
 ### Added

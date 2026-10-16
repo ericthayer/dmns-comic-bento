@@ -46,11 +46,18 @@ test('keyboard walkthrough: lean in, Escape, floors, hall, next hall, Back',asyn
   await page.goto('/');
   // Tab traverses the actual focus order. Arrow keys navigate the roving floor tabs.
   const closer=page.getByRole('button',{name:'Look closer'}).first();
+  const originalWidth=await page.locator('#mythic-strip').evaluate(e=>e.clientWidth);
   await tabTo(page,closer); await page.keyboard.press('Enter');
   await expect(closer).toHaveAttribute('aria-expanded','true');
+  await expect.poll(async()=>page.locator('#mythic-strip').evaluate(e=>e.clientWidth)).toBeGreaterThan(originalWidth+40);
+  await expect(page.locator('#mythic-strip-title')).toBeFocused();
+  const headingTop=await page.locator('#mythic-strip-title').evaluate(e=>e.getBoundingClientRect().top);
+  const chromeBottom=await page.locator('dmns-info-strip').evaluate(e=>e.getBoundingClientRect().bottom);
+  expect(headingTop).toBeGreaterThanOrEqual(chromeBottom);
   await page.keyboard.press('Escape');
   await expect(closer).toHaveAttribute('aria-expanded','false');
   await expect(closer).toBeFocused();
+  await expect.poll(async()=>page.locator('#mythic-strip').evaluate(e=>e.clientWidth)).toBeLessThan(originalWidth+2);
   const halls=page.locator('#way-halls .panel__link');
   await tabTo(page,halls);await page.keyboard.press('Enter');await page.waitForURL('**/halls/');
   await expect(page.locator('html')).toHaveAttribute('data-camera','zoom-in');
@@ -113,7 +120,9 @@ test('filters, beats, closure, traveler uniqueness and concept form',async({page
   await page.goto('/');
   const strip=page.locator('dmns-beat-strip');await strip.scrollIntoViewIfNeeded();
   await strip.getByRole('button',{name:'Replay'}).click();await expect(strip).toHaveAttribute('data-playing','true');
+  await expect(strip.locator('dmns-beat:visible')).toHaveCount(1);
   await expect(strip).not.toHaveAttribute('data-playing','true',{timeout:5000});
+  await expect(strip.locator('dmns-beat:visible')).toHaveCount(1);
   expect(await page.locator('dmns-specimen').evaluateAll(elements=>elements.filter(e=>getComputedStyle(e).viewTransitionName==='specimen').length)).toBeLessThanOrEqual(1);
   expect(await page.locator('dmns-panel[data-live]').count()).toBeLessThanOrEqual(6);
   await page.locator('#newsletter-email').fill('visitor@example.com');await page.getByRole('button',{name:'Try signup'}).click();

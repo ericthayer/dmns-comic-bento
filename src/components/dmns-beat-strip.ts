@@ -7,7 +7,7 @@ export class DmnsBeatStrip extends HTMLElement {
   private current = 0;
   private show(index: number): void {
     const beats = [...this.querySelectorAll<HTMLElement>('dmns-beat')];
-    beats.forEach((beat, i) => { beat.style.visibility = i === index ? 'visible' : 'hidden'; });
+    beats.forEach((beat, i) => { beat.hidden = i !== index; });
     const counter = this.querySelector('.beat-controls>span');
     if (counter) counter.textContent = `${String(index + 1).padStart(2, '0')} / ${String(beats.length).padStart(2, '0')}`;
   }
@@ -31,6 +31,7 @@ export class DmnsBeatStrip extends HTMLElement {
     this.timer = setTimeout(next, 900);
   }
   connectedCallback(): void {
+    this.dataset.enhanced = 'true';
     this.stop();
     const signal = this.controller.signal;
     this.querySelector('[data-replay]')?.addEventListener('click', () => this.play(true), { signal });
