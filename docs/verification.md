@@ -46,6 +46,6 @@ A 60-second, silent WebM recording is delivered beside the repository, along wit
 - Museum approval is needed for every visible TODO and every Sketch source. Missing approved exhibit facts were deliberately left marked.
 - Some timing requested in milliseconds for scroll-linked effects is represented by progressive scroll ranges: panel and word indexes stagger their timeline starts. The layout does not change on scroll.
 - The concept includes original simple SVG placeholders and held-frame sequences. Final illustration/action poses remain an illustrator handoff, documented source by source.
-- Netlify configuration is supplied. No hosting account or commerce/CMS/member system was changed.
+- Netlify configuration targets the user-authorized `dmns-comic-bento` project and GitHub repository. Deployment retains existing password protection. Commerce/CMS/member integrations remain conceptual.
 
 These limitations do not block the local concept from building or being reviewed. They must not be represented as completed physical-device, field-metric, content-approval, or final-art acceptance.

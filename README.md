@@ -87,7 +87,7 @@ Depth changes take precedence. At equal depth, an issue change wins over sibling
 
 ## Netlify
 
-`netlify.toml` uses `npm run build` and publishes `dist`. `_headers` supplies browser security and cache headers; `_redirects` supplies legacy-path redirects. There is no SPA fallback. No hosting account was modified or production deployment created during this local concept build.
+`netlify.toml` uses `npm run build` and publishes `dist`. `_headers` supplies browser security and cache headers; `_redirects` supplies legacy-path redirects. There is no SPA fallback. The deployment target is [dmns-comic-bento on Netlify](https://dmns-comic-bento.netlify.app), with source at [ericthayer/dmns-comic-bento](https://github.com/ericthayer/dmns-comic-bento). Deploy the `main` branch using these settings. Existing site password protection is retained. Local Netlify state is excluded from Git via `.netlify/`.
 
 ## Design, art, and accessibility
 
