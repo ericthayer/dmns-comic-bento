@@ -1,0 +1,142 @@
+{
+  "name": "Denver Museum of Nature & Science",
+  "shortName": "DMNS",
+  "asOf": "2026-10-15",
+  "timezone": "America/Denver",
+  "address": "2001 Colorado Blvd., Denver, CO 80205",
+  "hours": "9 a.m.–5 p.m. daily",
+  "fridayHours": "9 a.m.–9 p.m. most Fridays",
+  "closedDates": [
+    "12-25",
+    "08-26"
+  ],
+  "closedLabel": "Closed Dec. 25 and Aug. 26.",
+  "todo": "TODO: confirm with DMNS",
+  "tickets": "https://www.dmns.org/purchase/tickets/?category=general-admission",
+  "landAcknowledgment": "The Denver Museum of Nature & Science respectfully acknowledges that the land we are on today is the traditional and ancestral homelands of the Cheyenne, Arapaho and Ute Nations. We also acknowledge the 48 contemporary tribal nations historically tied to the lands that comprise what is now called Colorado but who now live in the American Southwest, the Great Plains and the Rocky Mountain Region.",
+  "landSource": "https://www.dmns.org/",
+  "nonprofit": "The Denver Museum of Nature & Science is a 501(c) 3 nonprofit organization.",
+  "credentials": [
+    "SCFD",
+    "Charity Navigator"
+  ],
+  "wing": {
+    "name": "Sturm Family Wing",
+    "description": "Part curiosity lab. Part classroom. Part cultural commons.",
+    "plaza": "Sturm Family Plaza is free and open daily, 5 a.m.–11 p.m.",
+    "cafe": "T.REX Cafe",
+    "lobby": "Sturm Infinity Lobby: events only."
+  },
+  "collections": [
+    {
+      "name": "Anthropology & Archaeology",
+      "art": "document",
+      "documentary": true
+    },
+    {
+      "name": "Paleontology & Geology",
+      "art": "crystal",
+      "documentary": false
+    },
+    {
+      "name": "Vertebrate & Invertebrate Zoology",
+      "art": "bird",
+      "documentary": false
+    },
+    {
+      "name": "Archives",
+      "art": "notebook",
+      "documentary": false
+    }
+  ],
+  "socials": [
+    {
+      "label": "Facebook",
+      "url": "https://www.facebook.com/DMNSorg"
+    },
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/denvermuseumns/"
+    },
+    {
+      "label": "Threads",
+      "url": "https://www.threads.net/@denvermuseumns"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://www.tiktok.com/@denvermns"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/user/DMNSorg"
+    },
+    {
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/dmns.org"
+    }
+  ],
+  "footerLinks": [
+    {
+      "label": "Conditions of Use",
+      "url": "https://www.dmns.org/about/policies-and-permissions/#conditions"
+    },
+    {
+      "label": "Privacy Policy",
+      "url": "https://www.dmns.org/about/policies-and-permissions/#privacypolicy"
+    },
+    {
+      "label": "Safe Spaces Policy",
+      "url": "https://www.dmns.org/about/policies-and-permissions/#safepolicy"
+    },
+    {
+      "label": "Comment Policy",
+      "url": "https://www.dmns.org/about/policies-and-permissions/#commentpolicy"
+    },
+    {
+      "label": "Press Room",
+      "url": "https://www.dmns.org/press-room/"
+    },
+    {
+      "label": "Careers",
+      "url": "https://www.dmns.org/about/careers/"
+    },
+    {
+      "label": "Contact Us",
+      "url": "https://www.dmns.org/contact-us/"
+    },
+    {
+      "label": "Financials",
+      "url": "https://www.dmns.org/about/museum-financials/"
+    }
+  ],
+  "outbound": [
+    {
+      "label": "Membership",
+      "url": "https://www.dmns.org/purchase/membership/#general-memberships"
+    },
+    {
+      "label": "Donate",
+      "url": "https://www.dmns.org/support/donate/"
+    },
+    {
+      "label": "Login",
+      "url": "https://www.dmns.org/login/"
+    },
+    {
+      "label": "Cart",
+      "url": "https://www.dmns.org/purchase/"
+    },
+    {
+      "label": "Search",
+      "url": "https://www.dmns.org/search/"
+    },
+    {
+      "label": "Catalyst Magazine",
+      "url": "https://www.dmns.org/catalyst/"
+    },
+    {
+      "label": "DMNS Digital Collections",
+      "url": "https://dmns.netx.net/portals/public/#page/home"
+    }
+  ]
+}

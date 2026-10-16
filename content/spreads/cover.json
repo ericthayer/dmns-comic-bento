@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cover",
+    "title": "Denver Museum of Nature & Science",
+    "kicker": "The Cover",
+    "layout": "cover"
+  },
+  {
+    "id": "mythic",
+    "title": "A little myth. A lot to discover.",
+    "kicker": "Special Edition",
+    "layout": "mosaic"
+  },
+  {
+    "id": "three-ways",
+    "title": "Follow your curiosity.",
+    "kicker": "Three ways in",
+    "layout": "trio"
+  },
+  {
+    "id": "floors",
+    "title": "Meanwhile, on every floor…",
+    "kicker": "A field guide to the halls",
+    "layout": "stair"
+  },
+  {
+    "id": "coming",
+    "title": "The story keeps going.",
+    "kicker": "Coming attractions",
+    "layout": "strip"
+  },
+  {
+    "id": "science",
+    "title": "Behind the glass. Beyond the obvious.",
+    "kicker": "Meet the collections",
+    "layout": "trio"
+  },
+  {
+    "id": "visit",
+    "title": "Make a day of discovery.",
+    "kicker": "Getting here",
+    "layout": "mosaic"
+  }
+]

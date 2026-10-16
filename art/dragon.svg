@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" data-placeholder="true"><defs><g id="shape-dragon"><path pathLength="1" class="art-fill" d="M130 273Q79 245 98 204Q122 218 151 205Q167 115 277 143L313 86L331 154Q389 170 384 226Q433 245 477 199Q472 272 403 288Q363 326 294 300L242 348L218 308L177 330L172 287Z"/>
+<path pathLength="1" class="paper-fill" d="M193 183Q168 91 224 53L256 117L305 52L304 159M338 172Q348 107 417 90L403 141L471 130L415 208"/>
+<path pathLength="1" d="M150 206Q171 159 226 156Q269 153 295 176M151 205Q117 232 143 261Q167 284 213 265M202 264L235 285L273 265M294 300Q335 270 365 272M174 288L202 282M218 308L236 289M402 289Q431 288 455 271"/>
+<path pathLength="1" class="paper-fill" d="M117 187Q104 150 127 134Q137 153 152 157M151 161Q143 125 171 109Q176 145 186 153"/>
+<path pathLength="1" class="paper-fill" d="M132 234L143 251L153 232M158 231L170 246L181 227"/>
+<ellipse class="paper-fill" cx="187" cy="196" rx="19" ry="22"/><ellipse class="ink-fill" cx="183" cy="199" rx="7" ry="10"/>
+<path pathLength="1" d="M99 222L81 216M96 230L76 232M212 189L230 196M211 213L234 219M257 197L270 204M251 230L263 239M290 217L308 227M324 240L338 248M370 265L382 270"/>
+<path pathLength="1" d="M69 172L64 149M55 178L37 166M449 66L449 89M438 77L460 77M508 268L505 288M497 279L518 278"/></g></defs><g class="beat-frame" data-frame="0" transform="translate(0 0)"><use href="#shape-dragon"/></g><g class="beat-frame" data-frame="1" transform="translate(1 -1)"><use href="#shape-dragon"/></g><g class="beat-frame" data-frame="2" transform="translate(-1 1)"><use href="#shape-dragon"/></g></svg>

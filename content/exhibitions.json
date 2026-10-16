@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "mythic-creatures",
+    "name": "Mythic Creatures: Dragons, Unicorns & Mermaids",
+    "shortName": "Mythic Creatures",
+    "description": "Dragons, Unicorns & Mermaids",
+    "opens": "2026-10-16",
+    "ends": null,
+    "color": "magenta",
+    "art": "dragon",
+    "documentary": false,
+    "category": "exhibition",
+    "source": "https://www.dmns.org/exhibitions/temporary-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS"
+    ]
+  },
+  {
+    "slug": "changing-landscapes",
+    "name": "Changing Landscapes: Inside Venice, Mesa Verde, and Rapa Nui",
+    "shortName": "Changing Landscapes",
+    "description": "Inside Venice, Mesa Verde, and Rapa Nui",
+    "opens": null,
+    "ends": "2027-01-03",
+    "color": "sepia",
+    "art": "landscape",
+    "documentary": true,
+    "category": "exhibition",
+    "source": "https://www.dmns.org/exhibitions/temporary-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS"
+    ]
+  },
+  {
+    "slug": "magical-winter-nights",
+    "name": "Magical Winter Nights",
+    "shortName": "Magical Winter Nights",
+    "description": "An evening event.",
+    "opens": "2026-11-25",
+    "ends": null,
+    "color": "blue",
+    "art": "stars",
+    "documentary": false,
+    "category": "event",
+    "source": "https://www.dmns.org/exhibitions/temporary-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS"
+    ]
+  },
+  {
+    "slug": "pokemon-fossil-museum",
+    "name": "Pokémon Fossil Museum",
+    "shortName": "Pokémon Fossil Museum",
+    "description": "Coming 2027",
+    "opens": "2027-05-28",
+    "ends": null,
+    "color": "paper",
+    "art": "none",
+    "documentary": false,
+    "category": "exhibition",
+    "source": "https://www.dmns.org/exhibitions/temporary-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS"
+    ]
+  }
+]

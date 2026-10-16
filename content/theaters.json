@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "gates-planetarium",
+    "name": "Gates Planetarium",
+    "description": "TODO: confirm with DMNS",
+    "color": "blue",
+    "art": "space",
+    "source": "https://www.dmns.org/visit/planetarium/"
+  },
+  {
+    "slug": "sturm-infinity-theater",
+    "name": "Sturm Infinity Theater",
+    "description": "Giant-screen films, lectures and evening events. Separate ticket.",
+    "color": "blue",
+    "art": "theater",
+    "source": "https://www.dmns.org/visit/sturm-infinity-theater/"
+  },
+  {
+    "slug": "laser-shows",
+    "name": "Laser Shows",
+    "description": "TODO: confirm with DMNS",
+    "color": "paper",
+    "art": "stars",
+    "source": "https://www.dmns.org/visit/laser-shows/"
+  }
+]

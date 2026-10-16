@@ -1,0 +1,172 @@
+[
+  {
+    "slug": "space-odyssey",
+    "name": "Space Odyssey",
+    "floors": [
+      "1"
+    ],
+    "description": "Hands-on space exhibit answering “the how” of exploring beyond Earth.",
+    "color": "blue",
+    "art": "space",
+    "pose": "floating",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "discovery-zone",
+    "name": "Discovery Zone",
+    "floors": [
+      "2"
+    ],
+    "description": "A space for our youngest guests to explore what science means to them.",
+    "color": "orange",
+    "art": "blocks",
+    "pose": "building",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "expedition-health",
+    "name": "Expedition Health",
+    "floors": [
+      "2"
+    ],
+    "description": "How genes, lifestyle and environment shape the body; what makes you you.",
+    "color": "magenta",
+    "art": "heart",
+    "pose": "stethoscope",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "wildlife-halls",
+    "name": "Wildlife Halls",
+    "floors": [
+      "2",
+      "3"
+    ],
+    "description": "Over 90 dioramas of animals and habitats from around the world.",
+    "color": "green",
+    "art": "bird",
+    "pose": "binoculars",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "prehistoric-journey",
+    "name": "Prehistoric Journey",
+    "floors": [
+      "3"
+    ],
+    "description": "Evolution of life on Earth, from single cells to dinosaurs to today.",
+    "color": "green",
+    "art": "stegosaurus",
+    "pose": "digging",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "egyptian-mummies",
+    "name": "Egyptian Mummies",
+    "floors": [
+      "3"
+    ],
+    "description": "Unwrap the stories of two ancient Egyptian women.",
+    "color": "sepia",
+    "art": "document",
+    "pose": "none",
+    "documentary": true,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "konovalenko",
+    "name": "Konovalenko: Gem Carvings of Russian Folklife",
+    "floors": [
+      "3"
+    ],
+    "description": "The only Vasily Konovalenko gem sculptures on public display outside Moscow.",
+    "color": "sepia",
+    "art": "crystal",
+    "pose": "none",
+    "documentary": true,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  },
+  {
+    "slug": "gems-and-minerals",
+    "name": "Gems and Minerals",
+    "floors": [],
+    "description": "Closed for major renovation and expansion.",
+    "color": "paper",
+    "art": "construction",
+    "pose": "hard-hat",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": true
+  },
+  {
+    "slug": "nature-play",
+    "name": "Nature Play",
+    "floors": [
+      "Outdoor"
+    ],
+    "description": "4-acre immersive outdoor experience in City Park.",
+    "color": "green",
+    "art": "leaf",
+    "pose": "leaves",
+    "documentary": false,
+    "source": "https://www.dmns.org/exhibitions/permanent-exhibitions/",
+    "todo": [
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS",
+      "TODO: confirm with DMNS"
+    ],
+    "closed": false
+  }
+]

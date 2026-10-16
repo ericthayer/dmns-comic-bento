@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" data-placeholder="true"><defs><g id="shape-specimen"><path pathLength="1" class="ink-fill" d="M170 277Q122 271 137 235L155 202Q144 169 179 159L193 126Q214 104 239 126Q274 108 291 137L326 141Q363 157 346 193Q388 219 357 243L345 267Q367 295 341 310L318 290Q299 315 270 298L255 323L232 308L208 321L188 295L166 308Z"/>
+<path pathLength="1" class="art-fill" d="M157 193L351 176L355 204L159 220Z"/><path pathLength="1" class="paper-fill" d="M174 185Q201 163 226 183L230 223Q207 240 184 226ZM250 178Q279 158 307 176L313 216Q283 235 257 216Z"/>
+<path pathLength="1" class="ink-fill" d="M207 189L214 188L217 215L210 217ZM282 180L289 179L292 207L285 209Z"/>
+<path pathLength="1" class="paper-fill" d="M232 253Q252 264 273 248Q261 280 240 270Z"/>
+<path pathLength="1" d="M135 230L106 215M359 221L387 202"/></g></defs><g class="beat-frame" data-frame="0" transform="translate(0 0)"><use href="#shape-specimen"/></g><g class="beat-frame" data-frame="1" transform="translate(1 -1)"><use href="#shape-specimen"/></g><g class="beat-frame" data-frame="2" transform="translate(-1 1)"><use href="#shape-specimen"/></g></svg>

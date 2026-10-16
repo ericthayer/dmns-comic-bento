@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" data-placeholder="true"><defs><g id="shape-unicorn"><path pathLength="1" class="art-fill" d="M170 310L174 222Q167 160 223 116L253 74L275 118L309 133L349 157L338 193L291 203L312 261L359 309L346 331L280 286L254 241L227 255L217 332L190 334L195 278Z"/>
+<path pathLength="1" class="paper-fill" d="M262 130L302 48L297 144M220 125Q164 135 139 196L164 202L143 224L179 228Q200 173 244 150"/>
+<path pathLength="1" d="M272 115L257 91M296 167L317 167M330 181L342 184M154 302Q127 279 143 254M154 302Q122 304 108 284M394 101V127M381 114H407M400 259V279M390 269H410"/>
+<circle class="ink-fill" cx="299" cy="160" r="4"/></g></defs><g class="beat-frame" data-frame="0" transform="translate(0 0)"><use href="#shape-unicorn"/></g><g class="beat-frame" data-frame="1" transform="translate(1 -1)"><use href="#shape-unicorn"/></g><g class="beat-frame" data-frame="2" transform="translate(-1 1)"><use href="#shape-unicorn"/></g></svg>

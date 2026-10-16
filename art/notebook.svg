@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" data-placeholder="true"><defs><g id="shape-notebook"><path pathLength="1" class="art-fill" d="M132 123L316 76L459 162L452 330L271 350L119 280Z"/>
+<path pathLength="1" class="paper-fill" d="M115 117L303 73L294 303L105 284ZM303 73L461 140L455 320L294 303Z"/>
+<path pathLength="1" d="M295 91L286 290M124 145L266 109M123 168L254 137M120 191L240 161M118 218L229 188M319 125L433 168M319 148L418 184M317 171L407 204M315 195L438 235M313 220L430 259M311 244L400 277"/>
+<path pathLength="1" class="art-fill" d="M146 236Q174 203 206 222Q219 249 198 269L176 257L153 270Z"/>
+<path pathLength="1" d="M351 113L360 89M380 123L397 103M338 97L339 77M92 121L62 103M89 144L58 142M119 91L109 62"/>
+<path pathLength="1" class="paper-fill" d="M477 179L488 158L507 169L496 190L468 276L453 289L451 267Z"/><path pathLength="1" d="M477 179L496 190M451 267L468 276"/></g></defs><g class="beat-frame" data-frame="0" transform="translate(0 0)"><use href="#shape-notebook"/></g><g class="beat-frame" data-frame="1" transform="translate(1 -1)"><use href="#shape-notebook"/></g><g class="beat-frame" data-frame="2" transform="translate(-1 1)"><use href="#shape-notebook"/></g></svg>
