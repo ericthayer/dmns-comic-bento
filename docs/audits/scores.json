@@ -1,0 +1,32 @@
+[
+  {
+    "route": "/",
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcpMs": 2253.0563,
+    "cls": 0.000427823674572855,
+    "tbtMs": 0
+  },
+  {
+    "route": "/halls/",
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcpMs": 2252.7838999999994,
+    "cls": 0,
+    "tbtMs": 0
+  },
+  {
+    "route": "/halls/prehistoric-journey/",
+    "performance": 98,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "lcpMs": 2252.6724,
+    "cls": 0.0005012499832114686,
+    "tbtMs": 0
+  }
+]

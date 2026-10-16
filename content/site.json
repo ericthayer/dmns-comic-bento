@@ -1,7 +1,7 @@
 {
   "name": "Denver Museum of Nature & Science",
   "shortName": "DMNS",
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-16",
   "timezone": "America/Denver",
   "address": "2001 Colorado Blvd., Denver, CO 80205",
   "hours": "9 a.m.–5 p.m. daily",
@@ -72,7 +72,7 @@
     },
     {
       "label": "Bluesky",
-      "url": "https://bsky.app/profile/dmns.org"
+      "url": "https://bsky.app/profile/denvermuseumns.bsky.social"
     }
   ],
   "footerLinks": [
@@ -116,7 +116,7 @@
     },
     {
       "label": "Donate",
-      "url": "https://www.dmns.org/support/donate/"
+      "url": "https://www.dmns.org/?campaign=677961"
     },
     {
       "label": "Login",

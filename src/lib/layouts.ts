@@ -7,7 +7,7 @@ export const layouts: Readonly<Record<LayoutName, LayoutMap>> = {
   cover: { phone:['a a','b b','c c','d d'], tablet:['a a a a a a','a a a a a a','b b b c c c','b b b d d d'], desktop:['a a a a a a a a b b b b','a a a a a a a a b b b b','a a a a a a a a c c c c','a a a a a a a a d d d d'] },
   trio: { phone:['a a','b b','c c'],tablet:['a a b b c c'],desktop:['a a a a b b b b c c c c'] },
   mosaic: {phone:['a a','b b','c c'],tablet:['a a a a b b','a a a a c c'],desktop:['a a a a a a a a b b b b','a a a a a a a a c c c c']},
-  stair: {phone:['a a','b b','c c'],tablet:['a a b b c c'],desktop:['a a a a b b b b c c c c']},
+  stair: {phone:['a a','b b','c c','d d','e e','f f','g g','h h','i i'],tablet:['a a a . . .','. b b b . .','. c c c . .','. d d d . .','. . e e e .','. . f f f .','. . g g g .','. . h h h .','. . i i i .'],desktop:['a a a . . . . . . . . .','. b b b c c c d d d . .','. . e e e f f f g g g .','. . . h h h i i i . . .']},
   strip: {phone:['a a','b b','c c','d d'],tablet:['a a a b b b','c c c d d d'],desktop:['a a a b b b c c c d d d']},
 };
 export function layoutOrder(rows: readonly string[]): string[] { return [...new Set(rows.flatMap(row => row.split(' ')).filter(v => v !== '.'))]; }

@@ -1,6 +1,11 @@
 {
-  "name": "dmns-field-notes", "version": "0.1.0", "private": true, "type": "module",
-  "engines": {"node": ">=22.0.0"},
+  "name": "dmns-field-notes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "npm run build && tsx scripts/dev.ts",
     "serve": "tsx scripts/dev.ts",
@@ -13,5 +18,17 @@
     "record": "tsx scripts/record.ts",
     "audit": "tsx scripts/audit.ts"
   },
-  "devDependencies": {"@axe-core/playwright":"^4.11.0","@playwright/test":"^1.56.0","@types/node":"^24.0.0","eslint":"^9.39.0","lighthouse":"^13.0.0","tsx":"^4.20.0","typescript":"^5.9.0","typescript-eslint":"^8.46.0","zod":"^4.1.0"}
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.0.0",
+    "axe-core": "^4.14.0",
+    "chrome-launcher": "^1.2.2",
+    "eslint": "^9.39.0",
+    "lighthouse": "^13.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "typescript-eslint": "^8.46.0",
+    "zod": "^4.1.0"
+  }
 }

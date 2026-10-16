@@ -23,3 +23,4 @@ dmns-caption{display:inline;}.caption-words{display:inline;}.caption-word{displa
 .sprite{position:absolute;width:0;height:0;overflow:hidden;}.official-details{padding:var(--space-8) var(--space-2);}.official-details a{min-height:44px;display:inline-flex;align-items:center;}
 @media(max-width:700px){.page-meta span:nth-child(2){display:none;}.page-meta{font-size:.625rem;}.spread-heading{padding-top:var(--space-10);}.spread-number{display:none;}}
 @media(prefers-reduced-transparency:reduce){*{backdrop-filter:none!important;}}
+.page-meta{align-items:center;}.page-meta a{display:inline-flex;align-items:center;min-height:24px;}

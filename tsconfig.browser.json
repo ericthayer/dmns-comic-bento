@@ -1,1 +1,19 @@
-{"extends":"./tsconfig.json","compilerOptions":{"rootDir":"src","outDir":"dist/assets/js","declaration":false,"sourceMap":false,"types":[],"removeComments":true},"include":["src/main.ts","src/early.ts"],"exclude":["src/templates","src/lib/content.ts"]}
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist/assets/js",
+    "declaration": false,
+    "sourceMap": false,
+    "types": [],
+    "removeComments": true
+  },
+  "include": [
+    "src/main.ts"
+  ],
+  "exclude": [
+    "src/templates",
+    "src/lib/content.ts",
+    "src/early.ts"
+  ]
+}

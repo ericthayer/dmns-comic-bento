@@ -5,7 +5,7 @@ import { visibleNotices } from './dates.js';
 const color = z.enum(['paper','green','blue','orange','magenta','sepia']);
 const slug = z.string().regex(/^[a-z0-9-]+$/);
 const url = z.string().url();
-const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v => !Number.isNaN(Date.parse(v)), 'Invalid date');
+const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/).refine(v => !Number.isNaN(Date.parse(v)) && new Date(`${v}T00:00:00Z`).toISOString().slice(0,10) === v, 'Invalid calendar date');
 export const hallSchema = z.object({slug,name:z.string(),floors:z.array(z.enum(['1','2','3','Outdoor'])),description:z.string(),color,art:slug,pose:z.string(),documentary:z.boolean(),source:url,todo:z.array(z.string()),closed:z.boolean()}).strict();
 export const exhibitionSchema = z.object({slug,name:z.string(),shortName:z.string(),description:z.string(),opens:date.nullable(),ends:date.nullable(),color,art:slug,documentary:z.boolean(),category:z.enum(['exhibition','event']),source:url,todo:z.array(z.string())}).strict();
 const theaterSchema = z.object({slug,name:z.string(),description:z.string(),color,art:slug,source:url}).strict();

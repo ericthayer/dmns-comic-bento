@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-16",
+  "browser": "156.0.8078.4",
+  "cpuSlowdown": 4,
+  "viewport": {
+    "width": 412,
+    "height": 823
+  },
+  "samples": 29,
+  "maxEventDurationMs": 64,
+  "thresholdMs": 200,
+  "passed": true,
+  "note": "Laboratory Event Timing samples from trusted keyboard/pointer interactions. Not field INP. Events below the 16ms observer threshold are omitted."
+}

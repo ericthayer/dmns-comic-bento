@@ -1,0 +1,10 @@
+.beat-frame{visibility:hidden;animation:boil var(--boil-duration) steps(3,end) infinite;animation-play-state:var(--boil-state,paused);}
+.beat-frame[data-frame="1"]{animation-delay:calc(var(--boil-duration) / -3);}
+.beat-frame[data-frame="2"]{animation-delay:calc(var(--boil-duration) / -1.5);}
+@keyframes boil{0%,32%{visibility:visible;}33%,100%{visibility:hidden;}}
+dmns-panel[data-live]{--boil-state:running;}
+:root:not([data-motion="full"]) .beat-frame{animation:none;visibility:hidden;}
+:root:not([data-motion="full"]) .beat-frame[data-frame="0"]{visibility:visible;}
+[data-mood="documentary"]{--boil-state:paused!important;}
+@media(prefers-reduced-motion:reduce){.beat-frame{animation:none;visibility:hidden;}.beat-frame[data-frame="0"]{visibility:visible;}}
+@media(prefers-contrast:more){.art-fill{transform:none;}.halftone{display:none;}}

@@ -8,9 +8,9 @@ export function resolveMotionLevel(p: MotionPreferences): MotionLevel {
 export function motionLevel(): MotionLevel { return (document.documentElement.dataset.motion as MotionLevel | undefined) ?? 'full'; }
 export function safeRead(key: string): string | null { try { return localStorage.getItem(key); } catch { return null; } }
 export function safeWrite(key: string, value: string): void { try { localStorage.setItem(key,value); } catch { /* Preferences still work for this page. */ } }
-export function applyPreferences(): void {
+export function applyPreferences(stillOverride?: boolean): void {
   const scroll = CSS.supports('animation-timeline: view()');
-  document.documentElement.dataset.motion = resolveMotionLevel({still:safeRead('dmns-still')==='true',reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,viewTransitions:'startViewTransition' in document,scrollTimelines:scroll});
+  document.documentElement.dataset.motion = resolveMotionLevel({still:stillOverride ?? safeRead('dmns-still')==='true',reduced:matchMedia('(prefers-reduced-motion: reduce)').matches,viewTransitions:'startViewTransition' in document,scrollTimelines:scroll});
   document.documentElement.dataset.scroll = String(scroll);
   document.documentElement.dataset.vtClass = String(CSS.supports('view-transition-class: a'));
   document.dispatchEvent(new Event('motionchange'));
@@ -21,7 +21,9 @@ export async function transition(update: () => void, types: string[], heading?: 
   running?.skipTransition();
   if (!('startViewTransition' in document) || motionLevel() !== 'full') update();
   else {
-    const vt = document.startViewTransition({update,types});
+    const vt = CSS.supports('selector(:active-view-transition-type(zoom-in))')
+      ? document.startViewTransition({update,types})
+      : document.startViewTransition(update);
     running = vt;
     // ready rejects when a second navigation skips a transition; never leak that rejection.
     void vt.ready.catch(()=>undefined);

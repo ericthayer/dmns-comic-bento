@@ -43,3 +43,19 @@ test('motion preferences dominate feature support',()=>{
     assert.equal(resolveMotionLevel({...base,still:false,reduced:false}),'full');
   }
 });
+test('expired notices are absent from rendered output, not just the strip',async()=>{
+  const previous=process.env.BUILD_DATE;
+  try {
+    process.env.BUILD_DATE='2026-10-30';
+    const c=await loadContent();assert.equal(c.notices.length,0);
+    const {renderPage}=await import('../../src/templates/pages.js');
+    const {documentHtml}=await import('../../src/templates/chrome.js');
+    for(const position of c.positions) {const page=renderPage(c,position);const html=documentHtml(c,position,page.title,page.html,'',page.documentary);assert.equal(html.includes('Prehistoric Journey closed Oct. 27'),false);assert.equal(html.includes('prehistoric-cleaning'),false);}
+  } finally {if(previous===undefined) delete process.env.BUILD_DATE;else process.env.BUILD_DATE=previous;}
+});
+test('template text and embedded JSON cannot close into executable markup',async()=>{
+  const {escape,jsonScript,caption}=await import('../../src/templates/html.js');
+  assert.equal(escape('<img src=x onerror="alert(1)">'),'&lt;img src=x onerror=&quot;alert(1)&quot;&gt;');
+  assert.equal(caption('<script>alert(1)</script>','h3','safe').includes('<script>'),false);
+  assert.equal(jsonScript({value:'</script><script>alert(1)</script>'}).includes('</script>'),false);
+});

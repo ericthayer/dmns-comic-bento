@@ -1,0 +1,22 @@
+@supports(animation-timeline:view()){
+  :root[data-motion="full"] dmns-spread:not(:first-of-type){view-timeline-name:--spread;view-timeline-axis:block;}
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .panel-grid::before{animation:gutter-ink linear both;animation-timeline:--spread;animation-range:entry 0% entry 40%;}
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .panel-grid>dmns-panel{animation:panel-drop linear both;animation-timeline:--spread;animation-range:entry 20% entry 80%;}
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .panel__art svg{animation:art-ink steps(1,end) both;animation-timeline:--spread;animation-range:entry 50% cover 30%;}
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .caption-word{animation:caption-slap steps(1,end) both;animation-timeline:--spread;animation-range:entry 70% cover 40%;}
+}
+@keyframes gutter-ink{from{clip-path:inset(0 100% 100% 0);}to{clip-path:inset(0);}}
+@keyframes panel-drop{from{opacity:.65;transform:scale(.96) translateY(8px);}to{opacity:1;transform:none;}}
+@keyframes art-ink{from{stroke-dashoffset:1;opacity:.45;}to{stroke-dashoffset:0;opacity:1;}}
+@keyframes caption-slap{from{clip-path:inset(0 100% 0 0);}to{clip-path:inset(0);}}
+[data-leaving] .panel__art{animation:unink var(--unink-duration) steps(3,end) forwards;}
+@keyframes unink{to{stroke-dashoffset:1;opacity:0;}}
+:root[data-cross-doc="false"][data-motion="full"] dmns-spread:first-of-type .panel-grid{animation:entrance 300ms var(--ink-ease);}
+@keyframes entrance{from{opacity:.65;transform:translateY(8px);}to{opacity:1;transform:none;}}
+:root:not([data-motion="full"]) dmns-spread,:root:not([data-motion="full"]) dmns-panel,:root:not([data-motion="full"]) .panel__art,:root:not([data-motion="full"]) .panel__art svg,:root:not([data-motion="full"]) .caption-word{animation:none!important;}
+:root:not([data-motion="full"]) dmns-panel:has(.panel__link:hover){transform:none;}
+@media(prefers-reduced-motion:reduce){dmns-spread,dmns-panel,.panel__art,.panel__art svg,.caption-word{animation:none!important;}dmns-panel:has(.panel__link:hover){transform:none;}}
+@supports(animation-timeline:view()){
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .panel-grid>dmns-panel{animation-range-start:entry calc(20% + var(--i,0) * 2%);}
+  :root[data-motion="full"] dmns-spread:not(:first-of-type) .caption-word{animation-range-start:entry calc(70% + var(--word,0) * 1.5%);}
+}

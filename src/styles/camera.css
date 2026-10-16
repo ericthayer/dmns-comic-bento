@@ -1,0 +1,50 @@
+@view-transition{navigation:auto;}
+::view-transition{pointer-events:none;}
+::view-transition-group(*){animation-duration:var(--camera-in);animation-timing-function:var(--ink-ease);}
+::view-transition-group(masthead),::view-transition-group(info-strip){animation:none;z-index:100;}
+::view-transition-old(masthead),::view-transition-old(info-strip){display:none;}
+::view-transition-new(masthead),::view-transition-new(info-strip){animation:none;}
+::view-transition-group(hero-panel){z-index:4;overflow:clip;}
+::view-transition-group(hero-title){z-index:6;}
+::view-transition-group(specimen){z-index:8;}
+::view-transition-old(hero-panel){animation:fade-out var(--camera-in) var(--ink-ease) both;}
+::view-transition-new(hero-panel){animation:fade-in var(--camera-in) var(--ink-ease) both;}
+:root:active-view-transition-type(zoom-in)::view-transition-old(root){animation:push-past var(--camera-in) var(--ink-ease) both;}
+:root:active-view-transition-type(zoom-in)::view-transition-new(root){animation:fade-in var(--camera-in) var(--ink-ease) both;}
+:root:active-view-transition-type(zoom-out)::view-transition-group(*){animation-duration:var(--camera-out);}
+:root:active-view-transition-type(zoom-out)::view-transition-old(root){animation:fade-out var(--camera-out) var(--ink-ease) both;}
+:root:active-view-transition-type(zoom-out)::view-transition-new(root){animation:pull-back var(--camera-out) var(--ink-ease) both;}
+:root:active-view-transition-type(turn-next)::view-transition-old(root){animation:turn-left-out var(--camera-turn) var(--ink-ease) both;transform-origin:left center;}
+:root:active-view-transition-type(turn-next)::view-transition-new(root){animation:turn-left-in var(--camera-turn) var(--ink-ease) both;}
+:root:active-view-transition-type(turn-prev)::view-transition-old(root){animation:turn-right-out var(--camera-turn) var(--ink-ease) both;transform-origin:right center;}
+:root:active-view-transition-type(turn-prev)::view-transition-new(root){animation:turn-right-in var(--camera-turn) var(--ink-ease) both;}
+:root:active-view-transition-type(new-issue)::view-transition-old(root){animation:issue-out var(--camera-issue) var(--ink-ease) both;}
+:root:active-view-transition-type(new-issue)::view-transition-new(root){animation:issue-in var(--camera-issue) var(--ink-ease) both;}
+:root:active-view-transition-type(floor-swap)::view-transition-old(floor-content){animation:floor-out 320ms var(--ink-ease) both;}
+:root:active-view-transition-type(floor-swap)::view-transition-new(floor-content){animation:floor-in 320ms var(--ink-ease) both;}
+::view-transition-group(.panel){animation-duration:480ms;}
+@keyframes fade-in{from{opacity:0;}to{opacity:1;}}
+@keyframes fade-out{to{opacity:0;}}
+@keyframes push-past{to{transform:scale(var(--camera-scale,1.08));opacity:.3;}}
+@keyframes pull-back{from{transform:scale(var(--camera-scale,1.08));opacity:.3;}to{transform:scale(1);opacity:1;}}
+@keyframes turn-left-out{to{transform:perspective(1600px) translateX(-100%) rotateY(-6deg);}}
+@keyframes turn-left-in{from{transform:translateX(100%);}to{transform:none;}}
+@keyframes turn-right-out{to{transform:perspective(1600px) translateX(100%) rotateY(6deg);}}
+@keyframes turn-right-in{from{transform:translateX(-100%);}to{transform:none;}}
+@keyframes issue-out{to{transform:translateY(12vh);opacity:.3;}}
+@keyframes issue-in{0%{transform:translateY(-8vh) scale(1.02);opacity:0;}80%{transform:scale(1.02);opacity:1;animation-timing-function:steps(2,end);}100%{transform:none;opacity:1;}}
+@keyframes floor-out{to{transform:translateY(4vh);opacity:0;}}
+@keyframes floor-in{from{transform:translateY(-4vh);opacity:0;}to{transform:none;opacity:1;}}
+:root[data-documentary="true"]::view-transition-old(root){--camera-scale:1.064;}
+:root:not([data-motion="full"])::view-transition-group(*),:root:active-view-transition-type(reduced)::view-transition-group(*){animation:none!important;}
+:root:not([data-motion="full"])::view-transition-old(*),:root:not([data-motion="full"])::view-transition-new(*),:root:active-view-transition-type(reduced)::view-transition-old(*),:root:active-view-transition-type(reduced)::view-transition-new(*){animation:none!important;}
+:root:not([data-motion="full"])::view-transition-new(root),:root:active-view-transition-type(reduced)::view-transition-new(root){animation:fade-in var(--crossfade) linear both!important;}
+@media(prefers-reduced-motion:reduce){::view-transition-group(*){animation:none!important;}::view-transition-old(*),::view-transition-new(*){animation:none!important;}::view-transition-new(root){animation:fade-in var(--crossfade) linear both!important;}}
+
+:root[data-documentary="true"]{--camera-scale:1.064;}
+:root:active-view-transition-type(zoom-in)::view-transition-image-pair(hero-panel){animation:panel-open var(--camera-in) var(--ink-ease) both;}
+:root:active-view-transition-type(zoom-out)::view-transition-image-pair(hero-panel){animation:panel-close var(--camera-out) var(--ink-ease) both;}
+@keyframes panel-open{from{clip-path:inset(0 round var(--panel-radius));}to{clip-path:inset(0 round 0px);}}
+@keyframes panel-close{from{clip-path:inset(0 round 0px);}to{clip-path:inset(0 round var(--panel-radius));}}
+:root:not([data-motion="full"])::view-transition-image-pair(*){animation:none!important;}
+@media(prefers-reduced-motion:reduce){::view-transition-image-pair(*){animation:none!important;}}
